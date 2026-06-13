@@ -1,0 +1,107 @@
+ /* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background: linear-gradient(135deg,#142140,#1e293b,#1a2d48);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+}
+
+/* Header */
+header{
+    text-align:center;
+    margin-bottom:50px;
+    max-width:800px;
+}
+
+.LV{
+    font-size:4rem;
+    font-weight:700;
+    background:linear-gradient(90deg,#38bdf8,#22c55e);
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin-bottom:15px;
+}
+
+.sub{
+    color:#cbd5e1;
+    font-size:1.1rem;
+    line-height:1.8;
+}
+
+/* Dashboard */
+.dashboard{
+    width:100%;
+    max-width:1000px;
+}
+
+.dashboard h2{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:1.8rem;
+}
+
+/* Cards */
+.action-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    text-decoration:none;
+    color:white;
+    padding:30px;
+    border-radius:20px;
+
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    transition:all 0.3s ease;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    background:rgba(255,255,255,0.12);
+    box-shadow:0 15px 30px rgba(0,0,0,0.3);
+}
+
+.icon{
+    font-size:2.5rem;
+    display:block;
+    margin-bottom:15px;
+}
+
+.card h3{
+    margin-bottom:10px;
+    font-size:1.3rem;
+}
+
+.card p{
+    color:#cbd5e1;
+    font-size:0.95rem;
+}
+.creator{
+    text-align:center;
+
+    margin-top:250px;
+
+    color:gray;
+
+    font-style:italic;
+    font-weight:500;
+}

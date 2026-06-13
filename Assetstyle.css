@@ -1,0 +1,373 @@
+/* ASSET MANAGEMENT - DARK UI */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+
+    --bg-primary:#0f172a;
+    --bg-secondary:#111827;
+
+    --card-bg:rgba(255,255,255,0.06);
+    --card-bg-2:rgba(255,255,255,0.04);
+
+    --accent-blue:#38bdf8;
+    --accent-green:#22c55e;
+
+    --danger:#ef4444;
+
+    --text-primary:#ffffff;
+    --text-secondary:#94a3b8;
+
+    --border:rgba(255,255,255,0.1);
+
+    --shadow:0 10px 30px rgba(0,0,0,.25);
+
+    --radius:20px;
+}
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body matched to File A aesthetic */
+body{
+    min-height:100vh;
+    font-family:'Poppins',sans-serif;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(56,189,248,.12),
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at bottom left,
+            rgba(34,197,94,.10),
+            transparent 35%
+        ),
+        linear-gradient(
+            180deg,
+            var(--bg-primary),
+            var(--bg-secondary)
+        );
+
+    color:var(--text-primary);
+    padding:40px 20px;
+}
+
+/* CONTAINER */
+
+.container{
+    max-width:1400px;
+    margin:auto;
+}
+
+/* FORM */
+
+#assetForm{
+    background:rgba(17,24,39,.95);
+    border:1px solid rgba(255,255,255,.06);
+    border-radius:24px;
+    padding:35px;
+    box-shadow:var(--shadow);
+}
+
+/* HEADINGS */
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+    font-size:2rem;
+    font-weight:700;
+    color:#ffffff;
+}
+
+h2{
+    font-size:1.1rem;
+    margin-bottom:20px;
+    color:#60a5fa;
+    border-bottom:1px solid rgba(255,255,255,.08);
+    padding-bottom:10px;
+}
+
+/* SECTIONS */
+
+.asset-section,
+.common-section{
+    background:var(--card);
+    border:1px solid rgba(255,255,255,.06);
+    border-radius:18px;
+    padding:24px;
+    margin-bottom:25px;
+}
+
+/* Hidden by default
+   JS will display selected section */
+
+.asset-section{
+    display:none;
+}
+
+/* FORM GROUP */
+
+.form-group{
+    margin-bottom:18px;
+}
+
+label{
+    display:block;
+    margin-bottom:8px;
+    color:var(--muted);
+    font-size:.92rem;
+    font-weight:500;
+}
+
+/* INPUTS */
+
+input,
+select,
+textarea{
+    width:100%;
+    background:var(--card-2);
+    border:1px solid var(--border);
+    color:var(--text);
+    border-radius:12px;
+    padding:12px 14px;
+    outline:none;
+    transition:.25s ease;
+    font-size:.95rem;
+}
+
+input::placeholder,
+textarea::placeholder{
+    color:#64748b;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    border-color:var(--primary);
+    box-shadow:0 0 0 4px rgba(59,130,246,.15);
+}
+
+textarea{
+    resize:vertical;
+    min-height:120px;
+}
+
+/* SELECT */
+
+select{
+    cursor:pointer;
+}
+
+select option{
+    background:#111827;
+    color:white;
+}
+
+optgroup{
+    color:#60a5fa;
+    font-weight:600;
+}
+
+/* BUTTON */
+
+button[type="submit"]{
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--accent-green),
+            #16a34a
+        );
+
+    color:white;
+
+    font-size:16px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+button[type="submit"]:hover{
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(34,197,94,.3);
+}
+
+button[type="submit"]:active{
+    transform:translateY(-2px);
+}
+
+/* ASSET TYPE SELECT */
+
+#assetType{
+    font-size:1rem;
+    font-weight:500;
+}
+
+/* GRID LAYOUT */
+
+.asset-section,
+.common-section{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:18px;
+}
+
+.asset-section h2,
+.common-section h2{
+    grid-column:1/-1;
+}
+
+/* CARD HOVER */
+
+.asset-section:hover,
+.common-section:hover{
+    border-color:rgba(59,130,246,.3);
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#1c3368;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#334155;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#475569;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+    body{
+        padding:15px;
+    }
+
+    #assetForm{
+        padding:20px;
+    }
+
+    h1{
+        font-size:1.6rem;
+    }
+
+    .asset-section,
+    .common-section{
+        grid-template-columns:1fr;
+    }
+}
+
+/* OPTIONAL ANIMATION */
+
+.asset-section{
+    animation:fadeIn .25s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(10px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+.ass {
+    color: white;
+    font-size: 21px;
+}
+.assets-display{
+    margin-top:40px;
+}
+
+.asset-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.asset-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.asset-card{
+    background:#062652;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.asset-card:hover{
+    transform:translateY(-5px);
+}
+
+.asset-type{
+    display:inline-block;
+    background:#4CAF50;
+    color:white;
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:12px;
+    margin-bottom:10px;
+}
+
+.asset-card h3{
+    margin-bottom:15px;
+}
+
+.asset-card p{
+    margin:8px 0;
+}
+
+.asset-actions{
+    display:flex;
+    gap:10px;
+    margin-top:15px;
+}
+
+.asset-actions button{
+    flex:1;
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.asset-actions button:first-child{
+    background:#2196F3;
+    color:white;
+}
+
+.asset-actions button:last-child{
+    background:#f44336;
+    color:white;
+}

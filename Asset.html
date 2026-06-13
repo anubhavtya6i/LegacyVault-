@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Wealth </title>
+    <link rel="stylesheet" href="Assetstyle.css"> 
+</head>
+<body>
+    <h1> Welcome Back </h1>
+
+<div class="container">
+
+    <h1>Add New or Update Asset</h1>
+
+    <form id="assetForm">
+
+        <!-- Asset Selection -->
+        <div class="form-group">
+            <label for="assetType">Select Asset Type</label>
+            <select id="assetType" name="assetType">
+                <option value="">Choose Asset Type</option>
+
+                <optgroup label="Investments">
+                    <option value="sip">SIP</option>
+                    <option value="mutualFund">Mutual Fund</option>
+                    <option value="stock">Stock</option>
+                    <option value="fd">Fixed Deposit</option>
+                    <option value="crypto">Cryptocurrency</option>
+                </optgroup>
+
+                <optgroup label="Physical Assets">
+                    <option value="realEstate">Real Estate</option>
+                    <option value="gold">Gold</option>
+                    <option value="silver">Silver</option>
+                    <option value="vehicle">Vehicle</option>
+                </optgroup>
+
+                <optgroup label="Liabilities">
+                    <option value="loanGiven">Loan Given</option>
+                    <option value="loanTaken">Loan Taken</option>
+                </optgroup>
+
+                <optgroup label="Other">
+                    <option value="insurance">Insurance</option>
+                    <option value="other">Other Asset</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <!-- SIP -->
+
+        <section id="sipSection" class="asset-section">
+
+            <h2>SIP Details</h2>
+
+            <div class="form-group">
+                <label>AMC Name</label>
+                <input type="text" name="amcName">
+            </div>
+
+            <div class="form-group">
+                <label>Scheme Name</label>
+                <input type="text" name="schemeName">
+            </div>
+
+            <div class="form-group">
+                <label>Folio Number</label>
+                <input type="text" name="folioNumber">
+            </div>
+
+            <div class="form-group">
+                <label>SIP Amount</label>
+                <input type="number" name="sipAmount">
+            </div>
+
+            <div class="form-group">
+                <label>Frequency</label>
+                <select name="frequency">
+                    <option>Monthly</option>
+                    <option>Quarterly</option>
+                    <option>Yearly</option>
+                </select>
+            </div>
+
+        </section>
+
+        <!-- Mutual Fund -->
+
+        <section id="mutualFundSection" class="asset-section">
+
+            <h2>Mutual Fund Details</h2>
+
+            <div class="form-group">
+                <label>Fund House</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Scheme Name</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Units</label>
+                <input type="number">
+            </div>
+
+            <div class="form-group">
+                <label>NAV</label>
+                <input type="number">
+            </div>
+
+        </section>
+
+        <!-- Stocks -->
+
+        <section id="stockSection" class="asset-section">
+
+            <h2>Stock Details</h2>
+
+            <div class="form-group">
+                <label>Company Name</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Demat Account</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Number of Shares</label>
+                <input type="number">
+            </div>
+
+            <div class="form-group">
+                <label>Average Buy Price</label>
+                <input type="number">
+            </div>
+
+        </section>
+
+        <!-- Real Estate -->
+
+        <section id="realEstateSection" class="asset-section">
+
+            <h2>Property Details</h2>
+
+            <div class="form-group">
+                <label>Property Type</label>
+                <select>
+                    <option>Residential</option>
+                    <option>Commercial</option>
+                    <option>Land</option>
+                    <option>Industrial</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Property Name</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Location</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Area</label>
+                <input type="number">
+            </div>
+
+            <div class="form-group">
+                <label>Area Unit</label>
+                <select> 
+                    <option>Sq Ft</option>
+                    <option>Sq Meter</option>
+                    <option>Acre</option>
+                </select>
+            </div>
+
+        </section>
+
+        <!-- Gold -->
+
+        <section id="goldSection" class="asset-section">
+
+            <h2>Gold Details</h2>
+
+            <div class="form-group">
+                <label>Purity</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Weight (Gram)</label>
+                <input type="number">
+            </div>
+
+            <div class="form-group">
+                <label>Storage Location</label>
+                <input type="text">
+            </div>
+
+        </section>
+
+        <!-- Silver -->
+
+        <section id="silverSection" class="asset-section">
+
+            <h2>Silver Details</h2>
+
+            <div class="form-group">
+                <label>Purity</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Weight (Gram)</label>
+                <input type="number">
+            </div>
+
+        </section>
+
+        <!-- Vehicle -->
+
+        <section id="vehicleSection" class="asset-section">
+
+            <h2>Vehicle Details</h2>
+
+            <div class="form-group">
+                <label>Vehicle Type</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Registration Number</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Model</label>
+                <input type="text">
+            </div>
+
+        </section>
+
+        <!-- Loan -->
+
+        <section id="loanSection" class="asset-section">
+
+            <h2>Loan Details</h2>
+
+            <div class="form-group">
+                <label>Person / Institution Name</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Principal Amount</label>
+                <input type="number">
+            </div>
+
+            <div class="form-group">
+                <label>Interest Rate (%)</label>
+                <input type="number">
+            </div>
+
+            <div class="form-group">
+                <label>Outstanding Amount</label>
+                <input type="number">
+            </div>
+
+            <div class="form-group">
+                <label>Start Date</label>
+                <input type="date">
+            </div>
+
+        </section>
+
+        <!-- FD -->
+
+        <section id="fdSection" class="asset-section">
+
+            <h2>Fixed Deposit Details</h2>
+
+            <div class="form-group">
+                <label>Bank Name</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Deposit Amount</label>
+                <input type="number">
+            </div>
+
+            <div class="form-group">
+                <label>Maturity Date</label>
+                <input type="date">
+            </div>
+
+        </section>
+
+        <!-- Insurance -->
+
+        <section id="insuranceSection" class="asset-section">
+
+            <h2>Insurance Details</h2>
+
+            <div class="form-group">
+                <label>Insurance Company</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Policy Number</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Sum Assured</label>
+                <input type="number">
+            </div>
+
+        </section>
+
+        <!-- Crypto -->
+
+        <section id="cryptoSection" class="asset-section">
+
+            <h2>Cryptocurrency Details</h2>
+
+            <div class="form-group">
+                <label>Coin Name</label>
+                <input type="text">
+            </div>
+
+            <div class="form-group">
+                <label>Quantity</label>
+                <input type="number">
+            </div>
+
+            <div class="form-group">
+                <label>Wallet Name</label>
+                <input type="text">
+            </div>
+
+        </section>
+
+        <!-- Other -->
+
+        <section id="otherSection" class="asset-section">
+
+            <h2>Other Asset Details</h2>
+
+            <div class="form-group">
+                <label>Description</label>
+                <textarea></textarea>
+            </div>
+
+        </section>
+
+        <button type="submit">
+            Save Asset
+        </button>
+
+    </form>
+
+</div>
+
+<!-- Show the assets -->
+
+<!-- USER ASSETS SECTION -->
+
+<section class="assets-display">
+
+    <h2 class="ass">My Assets</h2>
+
+    <div class="asset-grid">
+        <!-- Asset cards will be generated here by JavaScript -->
+    </div>
+
+</section>
+
+
+<script src="Asset.js"></script>
+
+</body>
+</html>

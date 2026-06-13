@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LegacyVault</title>
+    <link rel="stylesheet" href="ETstyle.css">
+</head>
+<body>
+    <main class="dashboard-container">
+    <header id="headline">
+        <h1 class="intro">LegacyVault</h1>
+        <p class="subheadline">Record your spending today and build better financial habits tomorrow. </p>
+    </header>
+
+    <!-- dashboard section -->
+    <section id="dashboardsection">
+        <div class="details">
+            <p>Allocated Budget</p>
+            <p>₹ 0.0</p>
+        </div>
+        <div class="details">
+            <p>Total Expenses</p>
+            <p>₹ 0.0</p>
+        </div>
+        <div class="details">
+            <p>Remaining Balance</p>
+            <p>₹ 0.0</p>
+        </div>
+    </section>
+
+    <!-- budget management section -->
+
+<section>
+    <h2 class="setheading">Set Priorities</h2>
+    <div id="enterbudgetbutton">
+        <label>Set Budget</label>
+        <input type="number" placeholder="Set your Budget">
+        <button type="submit"> Submit </button>
+    </div>
+    <div>
+        <p class="heading"><strong>Monthly Strategy</strong></p>
+        <div id="Strategy">
+        <div class="dispS">   
+            <p>Spend On Needs </p>
+            <p>₹ 0.0 </p>
+        </div>
+        <div class="dispS">
+            <p>Spend On Wants</p>
+            <p>₹ 0.0 </p>
+        </div>
+        <div class="dispS">
+            <p>Spend On Growth</p>
+            <p>₹ 0.0 </p>
+        </div>
+    </div>
+    </div>
+</section>
+<br>
+
+
+    <!-- Expences section -->
+
+<main id="expensesection">
+    <h2>Add New Expense</h2>
+    <div class="date">
+        <label>Enter Date </label>
+        <input type="date" required>
+    </div>
+<div class="date">
+    <label>Amount (₹)</label>
+    <input type="number" placeholder="0.00" required>
+</div>
+<div class="date">
+    <label>Category</label>
+    <select>
+    <option value="Food"> Food </option>
+    <option value="Growth"> Growth </option>
+    <option value="Bills"> Bills </option>
+    <option value="Entertainment"> Entertainment </option>
+    <option value="other"> Other </option>
+    </select>
+</div>
+<div class="date">
+    <label>Description</label>
+    <input type="text" placeholder="Add Description">
+</div>
+<div class="submitbutton">
+    <button type="submit">Add Expense</button>
+</div>
+</main>
+
+
+<!-- expense list section  -->
+
+ <section class="Transactions">
+ <h2> Recent Transactions </h2>
+ <div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Cat.</th>
+                <th>Amt.</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+    </table>
+ </div>
+ </section>
+ <div>
+    <p class="empty-message">No Transactions yet.</p>
+ </div>
+
+ <hr>
+</main>
+ <footer class="creator">
+        <p>&copy; 2026 Anubhav Tyagi. All rights reserved.</p>
+        <a href="#" class="back-to-top">↑ Back to Top</a>
+ </footer>
+
+</body>
+</html>
+
+
+<!-- this will also hold the details of the assets of the user and
+provide security to it
+also the assets details only be provided to the authorized person 
+in case something happens to the person the authorized person can access it 
+Assests like ; sips , stocks , gold , silver , real estate , loan etc
+details like ; location , what type of assest is , time duration (if any) , passwords (if any) 
+if the account is inactive for more the 6 months all the details will automatically will send to the
+authorized person email
+
+The AI analyzes:
+Spending habits
+Income
+Age
+Risk profile
+Existing investments
+Suggestions:
+"Reduce food delivery expenses by ₹3,000/month."
+"Your emergency fund covers only 2 months. Aim for 6 months."
+"Your portfolio is 80% equity. Consider diversification."
+Important: Position this as educational guidance, not regulated financial advice.
+
+Financial Health Dashboard
+Show:
+Net worth
+Total assets
+Total liabilities
+Monthly cash flow
+Savings rate
+Investment ratio\
+
+THE 3 MAIN MOTIVE OF THIS PROJECT 
+-- Track finances
+-- Manage assets
+-- Enable secure legacy/emergency access
+
+-->
