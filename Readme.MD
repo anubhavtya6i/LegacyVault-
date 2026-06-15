@@ -221,17 +221,7 @@ OR
 
 ## System Architecture
 
-User
-↓
-Frontend (HTML/CSS/JavaScript)
-↓
-Backend API
-↓
-Authentication Layer
-↓
-Database
-↓
-Asset & Legacy Management Services
+User -> Frontend (HTML/CSS/JavaScript) -> Backend API -> Authentication Layer -> Database -> Asset & Legacy Management Services
 
 ---
 
