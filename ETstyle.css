@@ -237,9 +237,7 @@ body{
         0 0 0 4px rgba(56,189,248,.15);
 }
 
-/* ===========================
-   BUTTON
-   =========================== */
+/* BUTTON */
 
 .submitbutton{
     margin-top:25px;
@@ -278,9 +276,7 @@ body{
         0 10px 25px rgba(34,197,94,.3);
 }
 
-/* ===========================
-   TRANSACTIONS PANEL
-   =========================== */
+/* TRANSACTIONS PANEL */
 
 .transactions{
     width:min(1100px,95%);

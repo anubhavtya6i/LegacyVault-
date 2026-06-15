@@ -1,5 +1,12 @@
-// ELEMENTS
+//Prevent from Direct access
 
+if(localStorage.getItem("isLoggedIn") !== "true"){
+    
+    window.location.href =
+    "Authentication-asset.html";
+}
+
+// ELEMENTS
 const assetType = document.getElementById("assetType");
 const form = document.getElementById("assetForm");
 
@@ -210,6 +217,18 @@ function deleteAsset(id) {
 }
 
 window.deleteAsset = deleteAsset;
+
+//Log-out button 
+
+document
+.getElementById("logoutBtn")
+.addEventListener("click", () => {
+
+    localStorage.removeItem("isLoggedIn");
+
+    window.location.href =
+    "Authentication-asset.html";
+});
 
 // INITIAL LOAD
 

@@ -1,0 +1,252 @@
+/* Universal style */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    radial-gradient(circle at top left,
+    #1e293b 0%,
+    #0f172a 40%,
+    #020617 100%);
+
+    color:white;
+    overflow:hidden;
+}
+
+/* Animated Background */
+
+body::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+
+    background:linear-gradient(
+    45deg,
+    #00d4ff,
+    #6366f1);
+
+    filter:blur(180px);
+
+    top:-150px;
+    left:-150px;
+
+    opacity:.4;
+}
+
+body::after{
+    content:"";
+    position:absolute;
+    width:450px;
+    height:450px;
+
+    background:linear-gradient(
+    45deg,
+    #14b8a6,
+    #06b6d4);
+
+    filter:blur(180px);
+
+    bottom:-150px;
+    right:-150px;
+
+    opacity:.4;
+}
+
+/* HEADER */
+
+header{
+    position:absolute;
+    top:40px;
+    text-align:center;
+    width:100%;
+}
+
+header h1{
+     font-size:4rem;
+    font-weight:700;
+    background:linear-gradient(90deg,#38bdf8,#22c55e);
+    background-clip:text;
+    -webkit-text-fill-color:transparent;
+    margin-bottom:15px;
+}
+
+header p{
+    color:#cbd5e1;
+    margin-top:10px;
+    font-size:1rem;
+}
+
+/* LOGIN CARD */
+
+.login-form{
+
+    width:420px;
+
+    padding:40px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    border-radius:24px;
+
+    box-shadow:
+    0 0 30px rgba(0,212,255,.15);
+
+    position:relative;
+    z-index:10;
+
+    transition:.4s;
+}
+
+.login-form:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 0 40px rgba(0,212,255,.3);
+}
+
+.login-form h2{
+
+    text-align:center;
+    margin-bottom:30px;
+
+    font-size:2rem;
+
+    color:white;
+}
+
+/* FORM GROUPS */
+
+.form-group{
+    display:flex;
+    flex-direction:column;
+    font-weight: bold;
+    margin-bottom:20px;
+}
+
+.form-group label{
+    margin-bottom:8px;
+
+    color:#cbd5e1;
+    font-size:.95rem;
+}
+
+.form-group input{
+
+    padding:14px;
+
+    font-size: 1rem;
+    
+    border:none;
+
+    border-radius:12px;
+
+    background:
+    rgba(255,255,255,.08);
+
+    color:white;
+
+    outline:none;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    transition:.3s;
+}
+
+.form-group input:focus{
+
+    border-color:#00d4ff;
+
+    box-shadow:
+    0 0 15px rgba(0,212,255,.5);
+}
+
+.form-group input::placeholder{
+
+    color:#94a3b8;
+}
+
+/* BUTTON */
+
+.login-button{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:14px;
+
+    background:rgb(17, 115, 17);
+
+    color:white;
+
+    font-size:16px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.login-button:hover{
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(34,197,94,.3);
+}
+
+
+/* FORGOT PASSWORD */
+
+.login-form p{
+
+    text-align:center;
+    margin-top:20px;
+}
+
+.login-form a{
+
+    color:#00d4ff;
+
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+.login-form a:hover{
+
+    color:#09a795;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:500px){
+
+    .login-form{
+
+        width:90%;
+        padding:30px;
+    }
+
+    header h1{
+
+        font-size:2.2rem;
+    }
+}
