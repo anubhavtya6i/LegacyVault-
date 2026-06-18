@@ -10,10 +10,12 @@ loginForm.addEventListener("submit", function(e){
     const password =
     document.getElementById("password").value;
 
-    if(email && password){
+    if(email === 'example@gmail.com' && password === '123456'){
 
         localStorage.setItem("isLoggedIn", "true");
 
         window.location.href = "Asset.html";
+    } else {
+        alert('Please enter correct Details');
     }
 });
