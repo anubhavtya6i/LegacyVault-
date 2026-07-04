@@ -1,11 +1,11 @@
 //Prevent from Direct access
-
+/* 
 if(localStorage.getItem("isLoggedIn") !== "true"){
     
     window.location.href =
     "Authentication-asset.html";
 }
-
+ */
 // ELEMENTS
 const assetType = document.getElementById("assetType");
 const form = document.getElementById("assetForm");
