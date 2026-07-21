@@ -14,6 +14,55 @@
     <h1>Add New or Update Asset</h1>
 
     <form id="assetForm">
+        <header class="top-header">
+
+    <h1>LegacyVault</h1>
+
+    <div class="theme-switch">
+
+        <button id="themeBtn">
+            🌙
+        </button>
+
+    </div>
+
+</header>
+
+<section class="dashboard">
+
+    <div class="summary-card">
+
+        <h3>Total Assets</h3>
+
+        <span id="assetCount">0</span>
+
+    </div>
+
+    <div class="summary-card">
+
+        <h3>Portfolio Value</h3>
+
+        <span id="portfolioValue">₹0</span>
+
+    </div>
+
+    <div class="summary-card">
+
+        <h3>Investments</h3>
+
+        <span id="investmentValue">₹0</span>
+
+    </div>
+
+    <div class="summary-card">
+
+        <h3>Liabilities</h3>
+
+        <span id="loanValue">₹0</span>
+
+    </div>
+
+</section>
 
         <!-- Asset Selection -->
         <div class="form-group">
@@ -373,17 +422,45 @@
 <!-- Show the assets -->
 
 <!-- USER ASSETS SECTION -->
+ <div class="toolbar">
+
+    <input
+        type="text"
+        id="searchAsset"
+        placeholder="Search Assets..."
+    >
+
+    <select id="filterAsset">
+
+        <option value="all">
+            All Assets
+        </option>
+
+        <option value="sip">SIP</option>
+
+        <option value="stock">Stocks</option>
+
+        <option value="realEstate">Property</option>
+
+        <option value="gold">Gold</option>
+
+        <option value="loanGiven">Loan Given</option>
+
+        <option value="loanTaken">Loan Taken</option>
+
+    </select>
+
+</div>
 
 <section class="assets-display">
 
-    <h2 class="ass">My Assets</h2>
+    <h2>My Assets</h2>
 
     <div class="asset-grid">
-        <!-- Asset cards will be generated here by JavaScript -->
+
     </div>
 
 </section>
-
 <button id="logoutBtn" class="Logout-btn">Logout</button>
 
 <script src="LV-JS/Asset.js"></script>

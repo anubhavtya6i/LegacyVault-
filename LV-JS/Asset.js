@@ -19,12 +19,16 @@ assetType.addEventListener("change", () => {
 
     const selected = assetType.value;
 
-    // Hide all forms
     allSections.forEach(section => {
         section.style.display = "none";
     });
 
     if (!selected) return;
+
+    if (selected === "loanGiven" || selected === "loanTaken") {
+        document.getElementById("loanSection").style.display = "block";
+        return;
+    }
 
     const targetSection =
         document.getElementById(selected + "Section");
@@ -33,7 +37,6 @@ assetType.addEventListener("change", () => {
         targetSection.style.display = "block";
     }
 });
-
 // SAVE ASSET
 
 form.addEventListener("submit", function (e) {
