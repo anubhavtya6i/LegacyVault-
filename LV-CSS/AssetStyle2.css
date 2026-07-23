@@ -3,7 +3,7 @@
 
 :root{
 
-    --primary:#2563eb;
+    /* --primary:#2563eb;
     --secondary:#4f46e5;
 
     --success:#22c55e;
@@ -21,13 +21,33 @@
     --shadow:
     0 10px 30px rgba(0,0,0,.08);
 
-    --radius:18px;
+    --radius:18px; */
+    --bg-primary:#0f172a;
+    --bg-secondary:#111827;
+
+    --card-bg:rgba(255,255,255,0.06);
+    --card-bg-2:rgba(255,255,255,0.04);
+
+    --accent-blue:#38bdf8;
+    --accent-green:#22c55e;
+
+    --danger:#ef4444;
+    --warning:#f59e0b;
+
+    --text-primary:#ffffff;
+    --text-secondary:#94a3b8;
+
+    --border:rgba(255,255,255,0.1);
+
+    --shadow:0 10px 30px rgba(0,0,0,.25);
+
+    --radius:20px;
 
 }
 
 body.dark{
 
-    --bg:#0f172a;
+   /*  --bg:#0f172a;
     --surface:#1e293b;
 
     --text:#ffffff;
@@ -36,7 +56,29 @@ body.dark{
     --border:#334155;
 
     --shadow:
-    0 10px 30px rgba(0,0,0,.45);
+    0 10px 30px rgba(0,0,0,.45); 
+     min-height:100vh;
+    font-family:'Poppins',sans-serif;*/
+ 
+    min-height:100vh;
+    font-family:'Poppins',sans-serif;
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(56,189,248,.12),
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at bottom left,
+            rgba(34,197,94,.10),
+            transparent 35%
+        ),
+        linear-gradient(
+            180deg,
+            var(--bg-primary),
+            var(--bg-secondary)
+        );
+        color:var(--text-primary);
 
 }
 
@@ -59,6 +101,28 @@ body{
     transition:.3s;
 
     padding:35px;
+     /* min-height:100vh;
+    font-family:'Poppins',sans-serif;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(56,189,248,.12),
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at bottom left,
+            rgba(34,197,94,.10),
+            transparent 35%
+        ),
+        linear-gradient(
+            180deg,
+            var(--bg-primary),
+            var(--bg-secondary)
+        );
+
+    color:var(--text-primary);
+    padding:40px 20px; */
 
 }
 .heading {
@@ -90,9 +154,9 @@ body{
 
 .theme-switch button{
 
-    width:40px;
+    width:1px;
 
-    height:48px;
+    height:40px;
 
     border:none;
 
@@ -375,7 +439,13 @@ button:hover{
 
 }
 .Logout-btn{
-   margin-top: 3rem;
+   cursor: pointer;
+    font-size: 1rem;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 3rem;
+    background-color: #324053;
+    color: white;
 }
 @media(max-width:768px){
 
